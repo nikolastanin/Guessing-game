@@ -23,5 +23,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: padding 0.05s;
+  transition: padding 0.05s;
+}
+
+.number_box:hover {
+  padding: 2px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

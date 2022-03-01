@@ -12,6 +12,10 @@ body {
   margin: 20px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: padding 0.05s; }
+  .number_box:hover {
+    padding: 2px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -15,4 +15,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition : padding 0.05s;
+    &:hover{
+        
+        padding: 2px;
+        cursor: pointer;
+    }
 }
