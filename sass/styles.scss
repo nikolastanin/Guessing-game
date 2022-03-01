@@ -1,27 +1,42 @@
 body{
     background-color: white;
+    text-align: center;
 }
 .container{
-    display: flex;
-
-    width: 100%;
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
+ //2X2 ovo radi
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    // probam
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    //2x3 and 3x3
+    // grid-template-columns: repeat(3,minmax(100px,auto));
+    width: 80%;
+    margin: 0 auto;
+    gap: 100px;
+}
+.info_container{
+    position: relative;
+    #points{
+        display: inline;
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
 }
 .number_box{
-    width: 100px;
-     height: 100px;
+    // width: 1fr;
+     min-height: 250px;
     // padding: 20px;
     background-color: wheat;
-    margin: 20px;
+    margin: 10px;
     //text aligment inside of div
     display: flex;
     justify-content: center;
     align-items: center;
      transition : padding 0.05s;
-    &:hover{
-        // border: 2px solid red;
-         padding: 2px;
-        cursor: pointer;
-    }
+  
 }
 
 .success{
