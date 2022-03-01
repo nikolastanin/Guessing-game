@@ -5,17 +5,20 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, auto));
-  grid-template-columns: repeat(2, minmax(100px, auto));
-  width: 80%;
-  margin: 0 auto;
-  gap: 100px; }
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center; }
 
 .info_container {
   position: relative; }
   .info_container #points {
     display: inline;
     position: absolute;
-    right: 0px;
+    right: 5rem;
+    top: 0; }
+  .info_container #rounds {
+    display: inline;
+    position: absolute;
+    left: 5rem;
     top: 0; }
 
 .number_box {
@@ -26,6 +29,8 @@ body {
   justify-content: center;
   align-items: center;
   transition: padding 0.05s; }
+  .number_box:hover {
+    cursor: pointer; }
 
 .success {
   background-color: green; }

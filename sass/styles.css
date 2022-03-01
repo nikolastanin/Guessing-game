@@ -8,10 +8,11 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(100px, auto))[2];
       grid-template-columns: repeat(2, minmax(100px, auto));
-  grid-template-columns: repeat(2, minmax(100px, auto));
-  width: 80%;
-  margin: 0 auto;
-  gap: 100px;
+  -ms-grid-columns: (300px)[2];
+      grid-template-columns: repeat(2, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .info_container {
@@ -21,7 +22,14 @@ body {
 .info_container #points {
   display: inline;
   position: absolute;
-  right: 0px;
+  right: 5rem;
+  top: 0;
+}
+
+.info_container #rounds {
+  display: inline;
+  position: absolute;
+  left: 5rem;
   top: 0;
 }
 
@@ -40,6 +48,10 @@ body {
           align-items: center;
   -webkit-transition: padding 0.05s;
   transition: padding 0.05s;
+}
+
+.number_box:hover {
+  cursor: pointer;
 }
 
 .success {

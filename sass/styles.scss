@@ -9,20 +9,29 @@ body{
  //2X2 ovo radi
     grid-template-columns: repeat(2,minmax(100px,auto));
     // probam
-    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-columns: repeat(2,300px);
+    
     //2x3 and 3x3
     // grid-template-columns: repeat(3,minmax(100px,auto));
-    width: 80%;
-    margin: 0 auto;
-    gap: 100px;
+  
+    // margin: 0 auto;
+    // gap: 100px;
+    justify-content: center;
 }
 .info_container{
     position: relative;
     #points{
         display: inline;
         position: absolute;
-        right: 0px;
+        right: 5rem;
         top: 0;
+        
+    }
+    #rounds{
+        display: inline;
+        position: absolute;
+        left: 5rem;
+        top: 0;   
     }
 }
 .number_box{
@@ -36,7 +45,9 @@ body{
     justify-content: center;
     align-items: center;
      transition : padding 0.05s;
-  
+  &:hover{
+      cursor: pointer;
+  }
 }
 
 .success{
