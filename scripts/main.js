@@ -1,11 +1,11 @@
-let numberBox = document.querySelectorAll(".number_box"); 
+let numberBox = document.querySelectorAll(".number-box"); 
 
 console.log(numberBox);
 
 const chooseNum = (e) =>{
         return new Promise ((resolve,reject)=>{
             let userNum =  parseInt(e.target.innerHTML);
-            let randomNum = Math.floor(Math.random() * 9) + 1;
+            let randomNum = Math.floor(Math.random() * 3) + 1;
             console.log(randomNum);
            
             if(userNum === randomNum){
@@ -31,7 +31,12 @@ console.log(results.randomNum, results.points +"guessed right");
         }
 }
 
+const flipFunc = (e) =>{
+      console.log(e.currentTarget.classList.toggle("flip"));
+}
 //event listeners
 numberBox.forEach(element => {
     element.addEventListener("click", mainFunc);
+    element.addEventListener("click", flipFunc);
+   
 });
