@@ -1,1 +1,1 @@
-body{background-color:green}.container{display:flex;width:100%}.number_box{width:100px;height:100px;background-color:red;margin:20px;display:flex;justify-content:center;align-items:center;transition:padding 50ms}.number_box:hover{padding:2px;cursor:pointer}
+body{background-color:#fff}.container{display:flex;width:100%}.number_box{width:100px;height:100px;background-color:wheat;margin:20px;display:flex;justify-content:center;align-items:center;transition:padding 50ms}.number_box:hover{padding:2px;cursor:pointer}.success{background-color:green}.fail{background-color:red}

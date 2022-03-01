@@ -1,5 +1,5 @@
 body {
-  background-color: green; }
+  background-color: white; }
 
 .container {
   display: flex;
@@ -8,7 +8,7 @@ body {
 .number_box {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: wheat;
   margin: 20px;
   display: flex;
   justify-content: center;
@@ -17,5 +17,11 @@ body {
   .number_box:hover {
     padding: 2px;
     cursor: pointer; }
+
+.success {
+  background-color: green; }
+
+.fail {
+  background-color: red; }
 
 /*# sourceMappingURL=styles.css.map */

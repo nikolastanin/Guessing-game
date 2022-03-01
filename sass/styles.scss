@@ -1,5 +1,5 @@
 body{
-    background-color: green;
+    background-color: white;
 }
 .container{
     display: flex;
@@ -8,17 +8,25 @@ body{
 }
 .number_box{
     width: 100px;
-    height: 100px;
-    background-color: red;
+     height: 100px;
+    // padding: 20px;
+    background-color: wheat;
     margin: 20px;
     //text aligment inside of div
     display: flex;
     justify-content: center;
     align-items: center;
-    transition : padding 0.05s;
+     transition : padding 0.05s;
     &:hover{
-        
-        padding: 2px;
+        // border: 2px solid red;
+         padding: 2px;
         cursor: pointer;
     }
+}
+
+.success{
+        background-color: green;
+}
+.fail{
+            background-color: red;
 }
