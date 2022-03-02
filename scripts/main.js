@@ -10,6 +10,7 @@ const chooseNum = (e) =>{
            
             if(userNum === randomNum){
                 e.target.classList.add("success");
+              console.log(e.target.nextSibling.nextSibling.classList.add("fail"));
                 resolve({points:1, randomNum}
                 );
             }
@@ -32,11 +33,15 @@ console.log(results.randomNum, results.points +"guessed right");
 }
 
 const flipFunc = (e) =>{
-      console.log(e.currentTarget.classList.toggle("flip"));
+      e.currentTarget.classList.toggle("flip");
 }
 //event listeners
 numberBox.forEach(element => {
     element.addEventListener("click", mainFunc);
     element.addEventListener("click", flipFunc);
-   
+ 
 });
+
+for(let i = 0 ; i<4; i++){ 
+        numberBox[i].style.display = "none";
+}
