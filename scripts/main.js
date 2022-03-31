@@ -5,7 +5,7 @@ console.log(numberBox);
 const chooseNum = (e) =>{
         return new Promise ((resolve,reject)=>{
             let userNum =  parseInt(e.target.innerHTML);
-            let randomNum = Math.floor(Math.random() * 3) + 1;
+            let randomNum = Math.floor(Math.random() * 4) + 1;
             console.log(randomNum);
            
             if(userNum === randomNum){
