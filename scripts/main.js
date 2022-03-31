@@ -41,7 +41,7 @@ numberBox.forEach(element => {
     element.addEventListener("click", flipFunc);
  
 });
-
+/**
 for(let i = 0 ; i<4; i++){ 
         numberBox[i].style.display = "none";
 }
